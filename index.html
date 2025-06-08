@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WashPro Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom keyframes for modal animation, as 'animate-modalShow' class is used in Modal.tsx */
+    @keyframes modalShow {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    /* Apply the animation if the class is present */
+    .animate-modalShow {
+      animation: modalShow 0.3s forwards;
+    }
+    /* ApexCharts specific styles */
+    .apexcharts-canvas {
+      margin: 0 auto;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "apexcharts": "https://esm.sh/apexcharts@^3.50.0",
+    "react-apexcharts": "https://esm.sh/react-apexcharts@^1.4.1",
+    "jspdf": "https://esm.sh/jspdf@^2.5.1",
+    "xlsx": "https://esm.sh/xlsx@^0.18.5",
+    "jspdf-autotable": "https://esm.sh/jspdf-autotable@^3.8.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-100">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
